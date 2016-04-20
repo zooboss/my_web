@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Admin Panel"
-AuthUserFile "D:/html course/server/version-1/htdocs/blog/admin/.htpasswd"
-Require valid-user
