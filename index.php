@@ -6,6 +6,6 @@
         
     $articles = articles_all($link);
     
-    include("/veiws/articles.php");
+    include(dirname(__FILE__)."/veiws/articles.php");
 
 ?>
