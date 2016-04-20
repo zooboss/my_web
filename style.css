@@ -1,0 +1,29 @@
+footer {
+    text-align: center;
+}
+.article {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+div.articles-admin ul li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: left;
+}
+div.articles-admin ul li:nth-of-type(2) {
+    width: 600px;
+}
+div.container-admin{
+    text-align: center;
+    margin-top: 50px;
+}
+.form-item { 
+width: 100%;
+    margin: 5px 0px;
+}
+textarea.form-item {
+    min-height: 500px;
+}
