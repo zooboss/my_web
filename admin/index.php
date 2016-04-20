@@ -1,6 +1,6 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/blog/database.php");
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/blog/models/articles.php");
+    require_once(dirname(__FILE__).'/../database.php');
+    require_once(dirname(__FILE__).'/../models/articles.php');
     
         
     $link = db_connect();
