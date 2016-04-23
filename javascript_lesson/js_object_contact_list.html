@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MY BLog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+   
+    </head>
+    <body>
+        <script>
+            var friends = new Object();
+            friends.bill = {
+                firstName: "Bill",
+                lastName: "Anderson",
+                number: "555-55-55",
+                address: ['One Microsoft Way', 'Redmid', 22]
+            }
+
+            friends.steve = {
+                firstName: "Steve",
+                lastName: "Hitler",
+                number: "666-66-66",
+                address: ['Moscow', 'beach', 42]
+
+                };
+
+            var list = function (friends)
+            {
+                for (var key in friends)
+                {
+                    window.alert(key);
+                }
+            }
+
+            var search = function(name)
+            {
+                for (var key in friends)
+                {
+                    if (name === friends[key].firstName)
+                    {
+                        window.alert(friends[key].address);
+                        return friends[key];
+                    }
+                }
+            }
+            list(friends);
+            var SEARCH = prompt ("What name do you want to find? Bill or Steve?")
+            var result = search(SEARCH);  
+            var myArray = [];
+            for (var key in result)
+                {
+                    myArray.push(result[key]);
+                }
+            window.alert (myArray);
+    
+    
+    
+    
+
+        
+        </script>
+        
+        
+    </body>
+</html>
