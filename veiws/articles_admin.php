@@ -3,7 +3,9 @@
     <head>
         <title> Admin panel</title>
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script type="text/javascript" src="../scripts/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="../scripts/script.js"></script>
     </head>
     <body>
         <div class = "container">
@@ -12,9 +14,9 @@
                     <div class = "articles-admin">
                         <ul>
                             <li> <?=$a['date']?> </li>
-                            <li> <a href = "../article.php?id=<?=$a['id']?>"> <?=$a['title']?> </a> </li>
+                            <li><a href = "../article.php?id=<?=$a['id']?>"> <?=$a['title']?> </a> </li>
                             <li><a href = "index.php?action=edit&id=<?=$a['id']?>">EDIT</a></li>
-                            <li><a href = "index.php?action=delete&id=<?=$a['id']?>">DELETE</a></li>
+                            <li><a class="delete" href = "index.php?action=delete&id=<?=$a['id']?>">DELETE</a></li>
                         </ul>
                     </div>
                     <?php endforeach ?>
